@@ -33,10 +33,9 @@ body {
 }
 
 .header__tagline {
-    color: var(--color-white);
+    color: var(--color-white-200);
     font-size: .6rem;
     text-transform: uppercase;
-
 }
 
 .header__tagline--highlight {
@@ -195,4 +194,37 @@ body {
 
 .footer{
     background-color: var(--color-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-white-200);
+    padding: 6rem;
+    gap: 3rem;
+}
+
+.footer__description{
+    text-transform: uppercase;
+    font-size: .6rem;
+    letter-spacing: 2px;
+}
+
+.footer__social-list {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.footer__social-link{
+    color: var(--color-white-500);
+}
+
+.footer__copyright{
+    font-size: .4rem;
+    text-transform: uppercase;
+    word-spacing: .2rem;
+}
+
+.footer__highlight{
+    color: var(--color-white-500);
 }
