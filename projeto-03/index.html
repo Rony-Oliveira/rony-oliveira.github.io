@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consultoria James</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,14 +15,16 @@
       <header class="header">
         <h1 class="header__logo">Consultoria <span class="header__logo--highlight">James</span></h1>
 
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="" class="nav__link"></a>Página inicial</li>
-            <li class="nav__item"><a href="" class="nav__link">Sobre</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Serviços</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Projetos</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Clientes</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Contato</a></li>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list">
+              <a href="#" class="header__nav-link">Página inicial</a>
+            </li>
+            <li class="header__nav-list"><a href="#" class="header__nav-link">Sobre</a></li>
+            <li class="header__nav-list"><a href="#" class="header__nav-link">Serviços</a></li>
+            <li class="header__nav-list"><a href="#" class="header__nav-link">Projetos</a></li>
+            <li class="header__nav-list"><a href="#" class="header__nav-link">Clientes</a></li>
+            <li class="header__nav-list"><a href="#" class="header__nav-link">Contato</a></li>
           </ul>
         </nav>
       </header>
@@ -31,7 +37,7 @@
 
         <section class="features">
           <div class="card">
-            <h3 class="card__title">Serviços</h3>
+            <h3 class="card__title">Projetos</h3>
             <p class="card__text">
               Qual a direção que você deseja para sua empresa? Precisa de ajuda para levá-lo até lá?
               Somos especializados em ajudar nossos clientes a levar suas empresas para o próximo
@@ -41,11 +47,11 @@
           </div>
 
           <div class="card">
-            <h3 class="card__title">Serviços</h3>
+            <h3 class="card__title">Clintes</h3>
             <p class="card__text">
-              Qual a direção que você deseja para sua empresa? Precisa de ajuda para levá-lo até lá?
-              Somos especializados em ajudar nossos clientes a levar suas empresas para o próximo
-              nível. Transformamos empresas...
+              Trabalhamos com a Pinktrip, uma loja de roupas local, em 2010. Eles tinham o sonho de
+              elevar seu negócio para o próximo nível e conquistar o mercado nacional, mantendo a
+              sensação de loja local para sua loja online.
             </p>
             <a href="#" class="card__cta">Mais informações</a>
           </div>
@@ -53,14 +59,77 @@
           <div class="card">
             <h3 class="card__title">Serviços</h3>
             <p class="card__text">
-              Qual a direção que você deseja para sua empresa? Precisa de ajuda para levá-lo até lá?
-              Somos especializados em ajudar nossos clientes a levar suas empresas para o próximo
-              nível. Transformamos empresas...
+              Trabalhamos com várias empresas, de ONGs a grandes corporações. Embora nossos clientes
+              variem, nossa especialidade é ajudar empresas pequenas e médias a crescerem.
             </p>
             <a href="#" class="card__cta">Mais informações</a>
           </div>
         </section>
+
+        <section class="details">
+          <div class="details__about">
+            <h3 class="details__title">Conquiste o Mundo!</h3>
+
+            <div class="details__content">
+              <img src="assets/images/fig1.png" alt="Office" />
+              <p class="details__text">
+                Na James Consultoria, nossa mera é oferecer soluções eficazes projetadas para
+                aprimorar seu negócio, seja ele um grande ou pequena empresa. Nossos consultores
+                criam soluções personalizadas para as necessidades do seu negócio para assegurar o
+                seu sucesso. Veja nossas soluções e serviços.
+              </p>
+
+              <a href="#" class="details__cta">Saiba mais</a>
+            </div>
+          </div>
+        </section>
+
+        <aside class="testimonial">
+          <h3 class="testimonial__title">Depoimento</h3>
+
+          <blockquote class="testimonial__quote">
+            <p class="testimonial__text">
+              "Sou um depoimento. Clique aqui para me editar e edicionar um texto que conte algo bem
+              legal sobre você e seus serviços. Deixe que seus visitantes avaliem e indiquem você
+              para seus amigos."
+            </p>
+          </blockquote>
+
+          <cite class="testimonial__author">Samanta Jones, Gerente de projetos</cite>
+        </aside>
+        <footer class="footer">
+          <nav class="footer_nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Página inicial</a>
+              </li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Sobre</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Serviços</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Projetos</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Clientes</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Contato</a></li>
+            </ul>
+          </nav>
+        </footer>
       </main>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">
+          © 2023 Consultoria James. Orgulhosamente criado com
+          <a href="#" class="footer__copyright-link">Wix.com</a>
+        </p>
+
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="arrow-link">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="footer__social-link">
+            <i class="fa-brands fa-google-plus-g"></i>
+          </a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
