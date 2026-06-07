@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+}
+
+#controles {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#formBusca {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+}
+
+.api-key-container {
+  display: flex;
+}
+
+#campoApiKey {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff9e6;
+}
+
+.busca-container {
+  display: flex;
+  gap: 10px;
+}
+
+#campoBusca {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#controles button, #controles select {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#controles button:hover {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.filtros-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#listaFilmes {
+  display: none; 
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-filme {
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-filme:hover {
+  transform: translateY(-5px);
+}
+
+.card-filme img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card-filme h3 {
+  font-size: 16px;
+  margin: 10px 0 5px 0;
+  overflow: hidden;
+}
+
+.card-filme p {
+  font-size: 14px;
+  color: #666;
+  margin: 3px 0;
+}
+
+#estatisticas {
+  display: none; 
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#estatisticas h2 {
+  margin-top: 0;
+  font-size: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.mensagem-erro {
+  grid-column: 1 / -1;
+  color: #d9534f;
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+}

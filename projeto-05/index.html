@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <h1>🎬 Movie Explorer</h1>
+
+  <section id="controles">
+    <form id="formBusca">
+      <div class="api-key-container">
+        <input id="campoApiKey" type="password" placeholder="Insira sua API Key da OMDb aqui (Obrigatório)...">
+      </div>
+
+      <div class="busca-container">
+        <input id="campoBusca" type="text" placeholder="Digite o nome do filme (ex: Batman)...">
+        <button type="submit" id="btnBuscar">Buscar</button>
+      </div>
+    </form>
+
+    <div class="filtros-container">
+      <select id="filtroTipo">
+        <option value="">Todos os Tipos</option>
+        <option value="movie">Filmes</option>
+        <option value="series">Séries</option>
+        <option value="game">Games</option>
+      </select>
+
+      <button id="btnOrdenarTitulo">Ordenar por Título (A-Z)</button>
+      <button id="btnOrdenarAno">Ordenar por Ano (Mais Recente)</button>
+    </div>
+  </section>
+
+  <section id="listaFilmes"></section>
+
+  <section id="estatisticas"></section>
+
+</body>
+</html>
